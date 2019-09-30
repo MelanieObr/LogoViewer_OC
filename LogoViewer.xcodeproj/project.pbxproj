@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B800408123189E9100A79ACE /* LogoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B800408023189E9100A79ACE /* LogoService.swift */; };
 		B80040832318A79A00A79ACE /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80040822318A79A00A79ACE /* Logo.swift */; };
+		B87A51A8233CBFB200C02AB6 /* LogoViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87A51A7233CBFB200C02AB6 /* LogoViewerTests.swift */; };
 		C9C38D89208F0E4900975B31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C38D88208F0E4900975B31 /* AppDelegate.swift */; };
 		C9C38D8B208F0E4900975B31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C38D8A208F0E4900975B31 /* ViewController.swift */; };
 		C9C38D8E208F0E4900975B31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C38D8C208F0E4900975B31 /* Main.storyboard */; };
@@ -16,9 +17,22 @@
 		C9C38D93208F0E4B00975B31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C38D91208F0E4B00975B31 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B87A51AA233CBFB200C02AB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9C38D7D208F0E4900975B31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9C38D84208F0E4900975B31;
+			remoteInfo = LogoViewer;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		B800408023189E9100A79ACE /* LogoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoService.swift; sourceTree = "<group>"; };
 		B80040822318A79A00A79ACE /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
+		B87A51A5233CBFB200C02AB6 /* LogoViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogoViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B87A51A7233CBFB200C02AB6 /* LogoViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoViewerTests.swift; sourceTree = "<group>"; };
+		B87A51A9233CBFB200C02AB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9C38D85208F0E4900975B31 /* LogoViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogoViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9C38D88208F0E4900975B31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9C38D8A208F0E4900975B31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +43,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B87A51A2233CBFB200C02AB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C9C38D82208F0E4900975B31 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,10 +60,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B87A51A6233CBFB200C02AB6 /* LogoViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B87A51A7233CBFB200C02AB6 /* LogoViewerTests.swift */,
+				B87A51A9233CBFB200C02AB6 /* Info.plist */,
+			);
+			path = LogoViewerTests;
+			sourceTree = "<group>";
+		};
 		C9C38D7C208F0E4900975B31 = {
 			isa = PBXGroup;
 			children = (
 				C9C38D87208F0E4900975B31 /* LogoViewer */,
+				B87A51A6233CBFB200C02AB6 /* LogoViewerTests */,
 				C9C38D86208F0E4900975B31 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				C9C38D85208F0E4900975B31 /* LogoViewer.app */,
+				B87A51A5233CBFB200C02AB6 /* LogoViewerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +137,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B87A51A4233CBFB200C02AB6 /* LogoViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B87A51AE233CBFB200C02AB6 /* Build configuration list for PBXNativeTarget "LogoViewerTests" */;
+			buildPhases = (
+				B87A51A1233CBFB200C02AB6 /* Sources */,
+				B87A51A2233CBFB200C02AB6 /* Frameworks */,
+				B87A51A3233CBFB200C02AB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B87A51AB233CBFB200C02AB6 /* PBXTargetDependency */,
+			);
+			name = LogoViewerTests;
+			productName = LogoViewerTests;
+			productReference = B87A51A5233CBFB200C02AB6 /* LogoViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C9C38D84208F0E4900975B31 /* LogoViewer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9C38D97208F0E4B00975B31 /* Build configuration list for PBXNativeTarget "LogoViewer" */;
@@ -128,10 +178,14 @@
 		C9C38D7D208F0E4900975B31 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = OpenClassrooms;
 				TargetAttributes = {
+					B87A51A4233CBFB200C02AB6 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = C9C38D84208F0E4900975B31;
+					};
 					C9C38D84208F0E4900975B31 = {
 						CreatedOnToolsVersion = 9.3;
 						LastSwiftMigration = 1020;
@@ -152,11 +206,19 @@
 			projectRoot = "";
 			targets = (
 				C9C38D84208F0E4900975B31 /* LogoViewer */,
+				B87A51A4233CBFB200C02AB6 /* LogoViewerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B87A51A3233CBFB200C02AB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C9C38D83208F0E4900975B31 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -170,6 +232,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B87A51A1233CBFB200C02AB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B87A51A8233CBFB200C02AB6 /* LogoViewerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C9C38D81208F0E4900975B31 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -182,6 +252,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B87A51AB233CBFB200C02AB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9C38D84208F0E4900975B31 /* LogoViewer */;
+			targetProxy = B87A51AA233CBFB200C02AB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C9C38D8C208F0E4900975B31 /* Main.storyboard */ = {
@@ -203,6 +281,51 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B87A51AC233CBFB200C02AB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L2PQM9BQX7;
+				INFOPLIST_FILE = LogoViewerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.melanieobringer.LogoViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LogoViewer.app/LogoViewer";
+			};
+			name = Debug;
+		};
+		B87A51AD233CBFB200C02AB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L2PQM9BQX7;
+				INFOPLIST_FILE = LogoViewerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.melanieobringer.LogoViewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LogoViewer.app/LogoViewer";
+			};
+			name = Release;
+		};
 		C9C38D95208F0E4B00975B31 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -354,6 +477,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B87A51AE233CBFB200C02AB6 /* Build configuration list for PBXNativeTarget "LogoViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B87A51AC233CBFB200C02AB6 /* Debug */,
+				B87A51AD233CBFB200C02AB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C9C38D80208F0E4900975B31 /* Build configuration list for PBXProject "LogoViewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

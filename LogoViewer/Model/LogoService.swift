@@ -9,6 +9,7 @@
 import Foundation
 
 class LogoService {
+    // create singleton pattern
     static var shared = LogoService()
     private init() { }
     
@@ -28,6 +29,7 @@ class LogoService {
         
         task?.cancel()
         task = session.dataTask(with: request, completionHandler: { (data, response, error) in
+            // manage multi-threading with DispatchQueue
             DispatchQueue.main.async {
                 guard let data = data, error == nil else {
                     return callback(false, nil)
