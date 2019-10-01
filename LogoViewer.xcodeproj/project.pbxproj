@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		B800408123189E9100A79ACE /* LogoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B800408023189E9100A79ACE /* LogoService.swift */; };
 		B80040832318A79A00A79ACE /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80040822318A79A00A79ACE /* Logo.swift */; };
-		B87A51A8233CBFB200C02AB6 /* LogoViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87A51A7233CBFB200C02AB6 /* LogoViewerTests.swift */; };
+		B8063A6123429D59007DDDF6 /* FakeResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8063A6023429D59007DDDF6 /* FakeResponseData.swift */; };
+		B8063A632342A0D8007DDDF6 /* URLSessionFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8063A622342A0D8007DDDF6 /* URLSessionFake.swift */; };
+		B8063A672342A354007DDDF6 /* LogoServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8063A662342A354007DDDF6 /* LogoServiceTests.swift */; };
+		B8063A77234352E2007DDDF6 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B8063A76234352E2007DDDF6 /* logo.png */; };
 		C9C38D89208F0E4900975B31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C38D88208F0E4900975B31 /* AppDelegate.swift */; };
 		C9C38D8B208F0E4900975B31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C38D8A208F0E4900975B31 /* ViewController.swift */; };
 		C9C38D8E208F0E4900975B31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C38D8C208F0E4900975B31 /* Main.storyboard */; };
@@ -30,8 +33,11 @@
 /* Begin PBXFileReference section */
 		B800408023189E9100A79ACE /* LogoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoService.swift; sourceTree = "<group>"; };
 		B80040822318A79A00A79ACE /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
+		B8063A6023429D59007DDDF6 /* FakeResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeResponseData.swift; sourceTree = "<group>"; };
+		B8063A622342A0D8007DDDF6 /* URLSessionFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionFake.swift; sourceTree = "<group>"; };
+		B8063A662342A354007DDDF6 /* LogoServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoServiceTests.swift; sourceTree = "<group>"; };
+		B8063A76234352E2007DDDF6 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		B87A51A5233CBFB200C02AB6 /* LogoViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogoViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B87A51A7233CBFB200C02AB6 /* LogoViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoViewerTests.swift; sourceTree = "<group>"; };
 		B87A51A9233CBFB200C02AB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9C38D85208F0E4900975B31 /* LogoViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogoViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9C38D88208F0E4900975B31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,8 +69,11 @@
 		B87A51A6233CBFB200C02AB6 /* LogoViewerTests */ = {
 			isa = PBXGroup;
 			children = (
-				B87A51A7233CBFB200C02AB6 /* LogoViewerTests.swift */,
+				B8063A76234352E2007DDDF6 /* logo.png */,
 				B87A51A9233CBFB200C02AB6 /* Info.plist */,
+				B8063A6023429D59007DDDF6 /* FakeResponseData.swift */,
+				B8063A622342A0D8007DDDF6 /* URLSessionFake.swift */,
+				B8063A662342A354007DDDF6 /* LogoServiceTests.swift */,
 			);
 			path = LogoViewerTests;
 			sourceTree = "<group>";
@@ -216,6 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8063A77234352E2007DDDF6 /* logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,7 +246,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B87A51A8233CBFB200C02AB6 /* LogoViewerTests.swift in Sources */,
+				B8063A672342A354007DDDF6 /* LogoServiceTests.swift in Sources */,
+				B8063A632342A0D8007DDDF6 /* URLSessionFake.swift in Sources */,
+				B8063A6123429D59007DDDF6 /* FakeResponseData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

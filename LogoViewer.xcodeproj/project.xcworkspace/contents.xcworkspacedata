@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:LogoViewer.xcodeproj">
+      location = "group:/Users/melanieobringer/Documents/OC/Projet9/Cours/Lancer des appels re&#x301;seau en iOS/LogoViewer/LogoViewer - Starter/LogoViewerTests/logo.png">
+   </FileRef>
+   <FileRef
+      location = "group:../LogoViewerTests">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
